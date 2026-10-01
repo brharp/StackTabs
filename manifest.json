@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "StackTabs MVP",
+  "version": "0.5.0",
+  "description": "Stack-based tab navigation with numeric-prefix commands (1\u20139) plus focus mode.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "push": {
+      "description": "Push (open new tab on top)"
+    },
+    "pop": {
+      "description": "Pop (close current tab)"
+    },
+    "swap": {
+      "description": "Swap top two tabs"
+    },
+    "dup": {
+      "description": "Duplicate top tab"
+    },
+    "rotate": {
+      "description": "Rotate top N tabs"
+    },
+    "drop": {
+      "description": "Drop (close) top N tabs"
+    },
+    "peek": {
+      "description": "Peek at top N tabs"
+    },
+    "focus": {
+      "description": "Focus: show only top N tabs"
+    },
+    "unfocus": {
+      "description": "Unfocus: show all tabs"
+    },
+    "setN1": {
+      "description": "Set numeric prefix = 1"
+    },
+    "setN2": {
+      "description": "Set numeric prefix = 2"
+    },
+    "setN3": {
+      "description": "Set numeric prefix = 3"
+    },
+    "setN4": {
+      "description": "Set numeric prefix = 4"
+    },
+    "setN5": {
+      "description": "Set numeric prefix = 5"
+    },
+    "setN6": {
+      "description": "Set numeric prefix = 6"
+    },
+    "setN7": {
+      "description": "Set numeric prefix = 7"
+    },
+    "setN8": {
+      "description": "Set numeric prefix = 8"
+    },
+    "setN9": {
+      "description": "Set numeric prefix = 9"
+    }
+  },
+  "action": {
+    "default_title": "StackTabs MVP"
+  }
+}
